@@ -14,9 +14,9 @@ To run this application on your local machine, follow these steps:
 
 1. Clone the repository to your local machine:
 
-\`\`\`bash
+```bash
 git clone <repository-url>
-\`\`\`
+```
 
 2. Navigate to the `fbref-scraper` directory:
 
