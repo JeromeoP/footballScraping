@@ -1,70 +1,9 @@
-# Getting Started with Create React App
+# Project Summary: FBref Premier League Data Scraper & Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The ongoing project in my GitHub repository is an innovative application that leverages React and Node.js to scrape and visualize football data from FBref, a well-known sports statistics website. This application specifically focuses on Premier League players, allowing users to search and retrieve comprehensive statistical data for any player in the league.
 
-## Available Scripts
+The core functionality of this project includes data extraction and visualization. It scrapes relevant data from FBref with precision and agility, then employs sophisticated data visualization techniques to present this information in an intuitive and engaging way.
 
-In the project directory, you can run:
+Interestingly, this project serves as a testament to my personal and technical growth. In the summer of 2020, I embarked on a similar venture, utilizing Python and React to develop a rudimentary version of this application. However, the current iteration of the project, with the integration of Node.js, is a substantial improvement over the past one. Not only does it have better performance, but it also boasts enhanced user experience and a visually appealing interface, reflecting the hard-earned progress over time.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The project code is neatly organized and well-documented, making it a great learning resource for individuals interested in data scraping, visualization, and web application development using React and Node.js. The project continues to evolve, and further updates will be aimed at increasing its utility and ensuring it remains at the forefront of sports data visualization tools.
