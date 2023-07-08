@@ -20,21 +20,21 @@ git clone <repository-url>
 
 2. Navigate to the `fbref-scraper` directory:
 
-\`\`\`bash
+```bash
 cd fbref-scraper
-\`\`\`
+```
 
 3. Start the server:
 
-\`\`\`bash
+```bash
 node server.js
-\`\`\`
+```
 
 4. In a new terminal window, navigate to the project's root directory and start the frontend:
 
-\`\`\`bash
+```bash
 npm start
-\`\`\`
+```
 
 Ensure you have Node.js and npm installed on your computer to run these commands. Once both the server and frontend are running, you can access the application via your local browser, typically at `http://localhost:3000`.
 
