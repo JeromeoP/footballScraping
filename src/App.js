@@ -1,4 +1,4 @@
-import PlayerSearch from './PlayerSearch';
+import PlayerSearch from './components/PlayerSearch';
 
 function App() {
   return (
