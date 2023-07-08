@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Text } from '@chakra-ui/react';
 
 const PlayerInfo = ({ playerData }) => (
+    playerData && (
 <Box borderWidth={1} borderRadius="lg" overflow="hidden" padding={4} marginTop={4}>
      <Text fontSize="xl" marginBottom={2}>Player: {playerData.name}</Text>
       <Text>Games Played: {playerData.games}</Text>
@@ -38,6 +39,7 @@ const PlayerInfo = ({ playerData }) => (
       <Text>Non-Penalty xG + xA per 90: {playerData.npxgXgAssistPer90}</Text>
       <Text marginTop={2}>More Info: <a href={playerData.href}>Link</a></Text>
   </Box>
+    )
 );
 
 export default PlayerInfo;

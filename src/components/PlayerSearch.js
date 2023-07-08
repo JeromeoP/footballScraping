@@ -9,7 +9,7 @@ import LoadingSpinner from './LoadingSpinner';
 import CompareButton from './CompareButton';
 
 function PlayerSearch() {
-  const { playerData1, playerData2, loading, fetchPlayerData, bigLoading } = usePlayerData();
+  const { playerData1, playerData2, loading, fetchPlayerData, bigLoading, bigData } = usePlayerData();
   const [playerId1, setPlayerId1] = useState('');
   const [playerId2, setPlayerId2] = useState('');
 
@@ -28,16 +28,16 @@ function PlayerSearch() {
   }
   return (
     <>
+    {console.log("playerD", playerData1)}
     <VStack spacing={4}>
-      <PlayerInput playerId1={playerId1} playerId2={playerId2} setPlayerId1={setPlayerId1} setPlayerId2={setPlayerId2} />
+      <PlayerInput bigData={bigData} playerId1={playerId1} playerId2={playerId2} setPlayerId1={setPlayerId1} setPlayerId2={setPlayerId2} />
       <CompareButton onClick={handleCompare} loading={loading} />
       {loading ? (
         <LoadingSpinner />
       ) : (
         <HStack spacing={4}>
-
-          {playerData1  && <PlayerInfo playerData={playerData1} />}
-          {playerData2  && <PlayerInfo playerData={playerData2} />}
+          {!playerData1?.error  && <PlayerInfo playerData={playerData1} />}
+          {!playerData2?.error  && <PlayerInfo playerData={playerData2} />}
           {playerData1  && playerData2  && (
             <RadarChartDisplay playerData1={playerData1} playerData2={playerData2} />
           )}

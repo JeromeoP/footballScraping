@@ -4,6 +4,7 @@ const usePlayerData = () => {
   const [playerData1, setPlayerData1] = useState(null);
   const [playerData2, setPlayerData2] = useState(null);
   const [bigLoading, setBigLoading] = useState(false);
+  const [bigData, setBigData] = useState(null);
 
   const [loading, setLoading] = useState(false);
 
@@ -29,8 +30,9 @@ const usePlayerData = () => {
     try {
         setBigLoading(true);
       const res = await fetch('http://localhost:3001/scrape-all');
-      const data = await res.json();
-      console.log('Data initialized', data);
+      const bigDataTemp= await res.json();
+      console.log('Data initialized', bigDataTemp);
+      setBigData(bigDataTemp.playerNames)
       setBigLoading(false);
     } catch (error) {
       console.error(error);
@@ -40,7 +42,7 @@ const usePlayerData = () => {
   useEffect(() => {
     initializeData();
   }, []);
-  return { playerData1,playerData2, loading, fetchPlayerData, bigLoading };
+  return { playerData1,playerData2, loading, fetchPlayerData, bigLoading, bigData };
 };
 
 export default usePlayerData;

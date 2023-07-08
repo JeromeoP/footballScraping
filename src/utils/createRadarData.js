@@ -26,11 +26,7 @@ const createRadarData = (playerData1, playerData2) => {
           [playerData1.name]: playerData1.goalsPensPer90,
           [playerData2.name]: playerData2.goalsPensPer90,
         },
-        {
-          subject: 'Goals + Assists from Penalties per 90',
-          [playerData1.name]: playerData1.goalsAssistsPensPer90,
-          [playerData2.name]: playerData2.goalsAssistsPensPer90,
-        },
+      
         {
           subject: 'xG per 90',
           [playerData1.name]: playerData1.xgPer90,

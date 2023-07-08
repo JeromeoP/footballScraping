@@ -156,8 +156,9 @@ app.get('/scrape-all', async (req, res) => {
     data.forEach(playerData => {
         myCache.set(playerData.name.toLowerCase(), playerData);
     });
-    console.log("cahce: ", myCache.data)
-    res.send({ status: 'Data scraped and cached' });
+    const cachedNames = Object.keys(myCache.data);
+
+    res.send({ status: 'Data scraped and cached', playerNames: cachedNames });
 });
 
 app.get('/scrape/:player', (req, res) => {
