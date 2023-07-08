@@ -28,7 +28,7 @@ To run this application on your local machine, follow these steps:
 1. Clone the repository to your local machine:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/JeromeoP/footballStatsScraping.git
 ```
 
 2. Navigate to the `fbref-scraper` directory:
