@@ -1,7 +1,20 @@
 # FBref Premier League Data Scraper & Visualizer
 
 This repository contains the code for a sophisticated application that leverages React and Node.js to scrape and visualize football data from FBref. The application focuses on Premier League players, offering users the ability to search and access detailed statistical data on any player within the league.
+## Background
+My current GitHub project is a sophisticated application that utilizes React and Node.js to scrape and visualize football data from FBref, a premier sports statistics platform. This application is centered around Premier League players, offering users the ability to search and obtain detailed statistical data on any player within the league.
 
+One significant feature of this project is its efficient data extraction and visualization capabilities. The application skillfully scrapes pertinent data from FBref and then uses advanced data visualization techniques to present this information in an engaging and understandable way.
+
+Incorporating Chakra UI, a popular open-source JavaScript library, has been a critical enhancement to this project. This library has greatly improved the application's aesthetic and usability. Chakra UI has made it easier to create a clean, responsive, and accessible user interface, offering users an intuitive experience across different devices and screen sizes.
+
+To ensure optimum efficiency and limit overusing FBref's resources, I've integrated a robust data caching feature. This not only stores previous search data for quicker retrieval but also significantly improves the application's response times and user experience.
+
+The project also stands as a testament to my journey of exploration and growth in technology. A shift from Python, typically used for data scraping, to Node.js was an enlightening experience. It provided a fresh perspective and an intriguing challenge, broadening my coding skills and my understanding of data scraping possibilities.
+
+This application is a significant upgrade from a similar project I developed during the summer of 2020 using Python and React. The current version, with its integration of Node.js and Chakra UI, showcases improved performance, a polished user interface, and an enhanced user experience.
+
+The codebase is neatly organized, and the documentation is thorough, making it an excellent learning resource for those interested in React, Node.js, data scraping, and visualization. The project continues to evolve, with future updates focused on extending its functionality, further improving user experience, and ensuring it remains a premier tool in the realm of sports data visualization.
 ## Features
 
 - Efficient data extraction and visualization: The application scrapes data from FBref and presents it in an understandable and engaging way using advanced data visualization techniques.
