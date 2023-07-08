@@ -28,24 +28,25 @@ function PlayerSearch() {
   }
   return (
     <>
-    {console.log("playerD", playerData1)}
-    <VStack spacing={4}>
-      <PlayerInput bigData={bigData} playerId1={playerId1} playerId2={playerId2} setPlayerId1={setPlayerId1} setPlayerId2={setPlayerId2} />
-      <CompareButton onClick={handleCompare} loading={loading} />
-      {loading ? (
-        <LoadingSpinner />
-      ) : (
-        <HStack spacing={4}>
-          {!playerData1?.error  && <PlayerInfo playerData={playerData1} />}
-          {!playerData2?.error  && <PlayerInfo playerData={playerData2} />}
-          {playerData1  && playerData2  && (
-            <RadarChartDisplay playerData1={playerData1} playerData2={playerData2} />
-          )}
-        </HStack>
-      )}
-    </VStack>
+      <VStack spacing={4}>
+        <PlayerInput bigData={bigData} playerId1={playerId1} playerId2={playerId2} setPlayerId1={setPlayerId1} setPlayerId2={setPlayerId2} />
+        <CompareButton onClick={handleCompare} loading={loading} />
+        {loading ? (
+          <LoadingSpinner />
+        ) : (
+          <VStack spacing={4}>  {/* Changed from HStack to VStack */}
+            {!playerData1?.error && !playerData2?.error && <PlayerInfo playerData1={playerData1} playerData2={playerData2} />}
+            {!playerData1?.error  && <PlayerInfo playerData={playerData1} />}
+            {!playerData2?.error  && <PlayerInfo playerData={playerData2} />}
+            {playerData1  && playerData2  && (
+              <RadarChartDisplay playerData1={playerData1} playerData2={playerData2} />
+            )}
+          </VStack>
+        )}
+      </VStack>
     </>
   );
+  
 }
 
 export default PlayerSearch;
